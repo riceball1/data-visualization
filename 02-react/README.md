@@ -3,5 +3,6 @@
 [Let's Make a Face Part II (React) 57:02](https://www.youtube.com/watch?v=2LhoCfjm8R4&t=3422s) 
  
 ## Getting Started
-- Installed `npm i rollup` to this folder
-   - See [rollup.js](https://rollupjs.org/guide/en/)
+- This uses CDN versions of React and ReactDOM
+- The `main.js` is where the react code lives, using vanilla JavaScript, and not jsx
+- To avoid CORs policy I used `python -m SimpleHTTPServer` locally 

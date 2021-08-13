@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "rollup": "^2.56.2"
-  }
+  },
+  "type": "module"
 }
