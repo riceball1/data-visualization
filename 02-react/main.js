@@ -1,15 +1,17 @@
-'use strict';
-
-const e = React.createElement;
-
-const App = ({message}) => {
-    console.log('props', message)
-    return e('h1', null, message)
-};
-
-const domContainer = document.getElementById('root');
-
-ReactDOM.render(
-    e(App, {message: "Hello React"}),
-    domContainer
-);
+const { createElement, useState } = React;
+   const render = ReactDOM.render;
+   const html = htm.bind(createElement);
+   
+   function ClickCounter() {
+     const [count, setCount] = useState(0);
+     
+     return html`
+       <div>
+         <button onClick=${() => setCount(count + 1)}>
+           Clicked ${count} times
+         </button>
+       </div>
+     `;
+   }
+   
+   render(html`<${ClickCounter}/>`, document.getElementById("root"));
