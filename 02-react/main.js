@@ -2,16 +2,24 @@ const { createElement, useState } = React;
    const render = ReactDOM.render;
    const html = htm.bind(createElement);
    
-   function ClickCounter() {
-     const [count, setCount] = useState(0);
+    const width = 800;
+    const height = 400;
+    const halfHeight = height / 2;
+
+   function Smiley() {
      
      return html`
-       <div>
-         <button onClick=${() => setCount(count + 1)}>
-           Clicked ${count} times
-         </button>
-       </div>
+       <svg width=${width} height=${height}>
+         <circle
+            cx=${width / 2}
+            cy=${halfHeight}
+            r=${halfHeight - 15}
+            fill="yellow"
+            stroke="black"
+            stroke-width="10"
+         />
+       </svg>
      `;
    }
    
-   render(html`<${ClickCounter}/>`, document.getElementById("root"));
+   render(html`<${Smiley}/>`, document.getElementById("root"));
