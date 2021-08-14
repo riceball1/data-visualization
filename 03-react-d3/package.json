@@ -1,0 +1,16 @@
+{
+  "name": "02-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "rollup": "rollup main.js --file bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^2.56.2"
+  },
+  "type": "module"
+}

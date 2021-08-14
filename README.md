@@ -29,3 +29,8 @@ This is my repo for following the DataVis 2020 a 17-hour course
 - Advanced frontend engineering approaches
 - Custom, bespoke design work is possible
 - Unlimited potential for adding interactivity
+
+
+
+## Helpful Resources
+- [Running JSX in Your Browser](https://dev.to/devalnor/running-jsx-in-your-browser-without-babel-1agc)
